@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Tutorial Week 3 - ECWM604</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<h2>ECWM604 Advanced Web Technologies</h2>
+
+			<h3>Week 3 Tutorial</h3>
+<div class="well">
+<p><strong>Exercise 1</strong></p>
+<p>Install CodeIgniter in your public_html directories if you have not already done so.  A youtube video on installing CodeIgniter in your university account is <a href="https://www.youtube.com/watch?v=SUq1diCRxtU" target="_blank">here</a>.
+	<p>Check that it runs using this form of URL: https://STUDENT_ID.users.ecs.westminster.ac.uk/ecwm604/index.php/Welcome/index (assuming that you have installed CI into a sub-directory of your public_html directory called 'ecwm604').
+</div>
+
+<div class="well">
+<p><strong>Exercise 2</strong></p>
+For this exercise, you are going to write your own view to replace the default one. 
+<p>
+Find the default Welcome controller in the application/controllers directory and open it in a text editor.
+<p>
+Edit the index() method so that instead of loading the view called 'welcome_message', it loads a view called 'myview'. Save the file.
+<p>
+Find the application/views directory. Open an editor and create an HTML page. Save it as 'myview.php' in the views directory.
+Reload the URL https://STUDENT_ID.users.ecs.westminster.ac.uk/ecwm604/Welcome/index and check you see your HTML page instead of the welcome_message page.
+
+</div>
+
+<div class="well">
+<p><p><strong>Exercise 3</strong></p>
+<p>
+Create a Model class called Star_model which includes a method called lookup(). The method should return an array with data about a celebrity (perhaps name, url of an image, date of birth etc.)
+<p>
+Create a view called 'star_display'. The HTML code in the view should display the data about a celebrity.
+<p>
+Create a Controller called Stars and add an index() method. In the index() method, use the Star_model Model class and the star_display View to generate a page about a celebrity.
+<p>
+Test your code to make sure it works, i.e., that when you call  https://STUDENT_ID.users.ecs.westminster.ac.uk/ecwm604/Stars/index, you see a page about your celebrity.
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
